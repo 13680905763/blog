@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/13680905763/blog/issues"
   },
-  "homepage": "https://github.com/13680905763/blog#readme",
-  "devDependencies": {
-    "vuepress": "^1.9.8"
-  }
+  "homepage": "https://github.com/13680905763/blog#readme"
 }
