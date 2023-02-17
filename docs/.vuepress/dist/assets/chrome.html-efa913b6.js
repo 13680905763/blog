@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-21421c06","path":"/life/other/chrome.html","title":"谷歌插件推荐","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676620496000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":1}]},"filePathRelative":"life/other/chrome.md"}');export{e as data};
