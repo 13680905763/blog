@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/13680905763/blog/issues"
   },
-  "homepage": "https://github.com/13680905763/blog#readme"
+  "homepage": "https://github.com/13680905763/blog#readme",
+  "dependencies": {
+    "vuepress": "^2.0.0-beta.60"
+  }
 }
