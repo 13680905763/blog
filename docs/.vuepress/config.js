@@ -39,7 +39,16 @@ export default defineUserConfig({
           children: [
             {
               text: 'HTML',
-              link: '/web/html-css/html/'
+              link: '/web/html-css/html/',
+              children:[
+                {
+                  text: '什么是html',
+                  link: '/web/html-css/html/什么是html.md'
+                },
+                {
+                  text: 'js高级'
+                }
+              ]
             },
             {
               text: 'CSS',
