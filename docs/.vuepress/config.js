@@ -2,7 +2,7 @@ import { defaultTheme, defineUserConfig } from 'vuepress'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '悲伤猪的博客',
-  base: '/',
+  base: '/blog/',
   description: 'i am sadPig',
   theme: defaultTheme({
     logo: 'http://caibaojian.com/vuepress/hero.png',
