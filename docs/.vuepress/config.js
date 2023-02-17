@@ -12,11 +12,11 @@ export default defineUserConfig({
         link: '/'
       },
       {
-        text: '前端知识',
+        text: '前端note',
         link: '/web/'
       },
       {
-        text: '计算机基础',
+        text: '计算机知识',
         link: '/computer/'
       },
       {
@@ -45,9 +45,7 @@ export default defineUserConfig({
                   text: '什么是html',
                   link: '/web/html-css/html/什么是html.md'
                 },
-                {
-                  text: 'js高级'
-                }
+                
               ]
             },
             {
