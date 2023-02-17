@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-744e6dd4","path":"/web/","title":"关于前端","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676561408000,"contributors":[{"name":"张育华","email":"9583941+z-zhang-yuhua@user.noreply.gitee.com","commits":1}]},"filePathRelative":"web/README.md"}');export{e as data};
