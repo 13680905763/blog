@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/portrait.jpg
+heroImage: /img/portrait.png
 heroText: Hello I am SadPig
 tagline: I think learning is endless
 actions:
