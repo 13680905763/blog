@@ -40,12 +40,15 @@ export default defineUserConfig({
             {
               text: 'HTML',
               link: '/web/html-css/html/',
-              children:[
+              children: [
                 {
-                  text: '什么是html',
-                  link: '/web/html-css/html/什么是html.md'
+                  text: 'what is html',
+                  link: '/web/html-css/html/html.md'
                 },
-                
+                {
+                  text: 'what is element',
+                  link: '/web/html-css/html/element.md'
+                }
               ]
             },
             {
@@ -89,6 +92,10 @@ export default defineUserConfig({
             {
               text: '谷歌插件推荐',
               link: '/life/other/chrome.md'
+            },
+            {
+              text: 'vscode插件推荐',
+              link: '/life/other/vscode.md'
             }
           ]
         }
