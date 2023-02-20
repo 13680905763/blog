@@ -87,6 +87,17 @@ head 元素 规定文档相关的**配置信息**（也称之为元数据），�
 
   ![head](/img/web/html/head.jpg)
 
+- link 元素
+
+  - 是外部资源链接，规范了文档与外部资源的关系
+  - 最常用的链接是 css，也可以被用来创建 favicon 图标
+  - rel 指定链接类型
+  - href 指定被链接资源的 url
+
+  ```html
+  <link rel="stylesheet" href="./index.css" />
+  ```
+
 ## body 元素
 
 body 元素里面的内容将是你**在浏览器窗口中看到的东西**，也就是**网页的具体内容和结构**。

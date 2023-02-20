@@ -1,8 +1,8 @@
-# 邂逅
+# Encounter
 
-## 软件
+## Software
 
-- [专业的软件定义](https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6/12053)：一系列按照特定顺序组织的**计算机指令**
+- [专业的软件定义](https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6)：一系列按照特定顺序组织的**计算机指令**
 - 软件开发是什么呢?就是告诉**计算机一系列的指令**，这些指令也称之为**程序**
 
 ## 软件与应用程序
@@ -36,9 +36,9 @@ URL 的格式
 url,urn 都是 uri
 ![URI](/img/computer/encounter/uri.jpg)
 
-- [URI](https://baike.baidu.com/item/URI/2901761?fr=aladdin) = Uniform Resource Identifier 统一资源**标志符**，用于标识 Web 技术使用的逻辑或物理资源。；
-- [URL](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%B3%BB%E7%BB%9F?fromtitle=url&fromid=110640&fromModule=lemma_search-box) = Uniform Resource Locator 统一资源**定位符**，俗称网络地址，相当于网络中的门牌号；
-- [URN](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%90%8D%E7%A7%B0?fromtitle=URN&fromid=2901667&fromModule=lemma_search-box) = Uniform Resource Name 统一资源**名称**，是带有名字的因特网资源；
+- [URI](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6) = Uniform Resource Identifier 统一资源**标志符**，用于标识 Web 技术使用的逻辑或物理资源。；
+- [URL](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E7%AC%A6) = Uniform Resource Locator 统一资源**定位符**，俗称网络地址，相当于网络中的门牌号；
+- [URN](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%90%8D%E7%A7%B0) = Uniform Resource Name 统一资源**名称**，是带有名字的因特网资源；
 
 uri 是一个比较抽象的概念，而 url 和 urn 可以理解成继承至 uri，是 uri 的具体表现，uri 用于标识一个资源，这种标识允许我们对资源通过特定的协议进行交互操作，像我们可以通过定位的方式使用 url 获取一个资源，也可以用过名称的方式 urn 获取一个资源。
 
@@ -61,3 +61,31 @@ uri 是一个比较抽象的概念，而 url 和 urn 可以理解成继承至 ur
   ![字符编码](/img/computer/encounter/字符编码.jpg)
 
 [了解更多](https://www.jianshu.com/p/899e749be47c)
+
+## 进制
+
+概念：进位制是一种记数方式，亦称进位计数法或位值计数法。当数字达到某个值时，进一位(比如从 1 位变成 2 位)。
+
+- 二进制：当数字到 1 的时候，用一位已经表示不了了，那么就进一位。
+- 八进制：当数字到 7 的时候，用一位已经表示不了了，那么就进一位。
+- 十进制：当数字到 9 的时候，用一位已经表示不了了，那么就进一位。
+- 十六进制：等等，用一位如何表示十六个数字呢？a(10)、b(11)、c(12) 、 d(13) 、 e(14) 、 f(15)
+
+### 人类的十进制
+
+从发明数字的开始，人类就使用十进制，原因可能是人类正好十根手指。
+
+但是计算机就认为二进制、八进制、十六进制更符合自己的思维
+
+### 如何表示其他进制
+
+- 二进制（0b 开头, binary）：其中的数字由 0、1 组成，可以回顾之前学习过的机器语言。
+- 八进制（0o 开头, Octonary）：其中的数字由 0~7 组成。
+- 十六进制（0x 开头, hexadecimal）：其中的数字由 0~9 和字母 a-f 组成（大小写都可以）
+
+### 十进制|二进制
+
+- 虽然计算机更喜欢二进制, 但是编程中我们还是以十进制为主.
+- 因为高级编程语言的目的就是更加接近自然语言, 让我们人类更容易理解
+
+十进制转其他，整除取余

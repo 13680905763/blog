@@ -39,7 +39,7 @@ CSS 提供了 3 种方法，可以将 CSS 样式应用到元素上：
 - 内联样式（inline style）：写在 html 元素的 style 属性上，css 样式之间用分号隔开
 - 内部样式表（internal style sheet）将 css 放在 html\<head>元素里的\<style>元素之中
 - 外部样式表（external style sheet）css 编写在一个独立文件中，通过\<link>元素引入进来
-
+  
 ## @import
 
 可以在 style 元素或者 CSS 文件中使用@import 导入其他的 CSS 文件
@@ -47,6 +47,10 @@ CSS 提供了 3 种方法，可以将 CSS 样式应用到元素上：
 ```css
 @import url(./reset.css);
 ```
+
+通常在 index.css 引入别的 css,index.html 在引入 index.css
+ 
+[拓展]index 索引，通常作为入门文件
 
 ## CSS 的注释
 

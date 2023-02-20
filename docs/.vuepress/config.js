@@ -19,9 +19,10 @@ export default defineUserConfig({
         text: 'computer',
         link: '/computer/'
       },
+
       {
-        text: 'life',
-        link: '/life/'
+        text: 'other',
+        link: '/other/'
       },
       {
         text: 'Github',
@@ -57,7 +58,7 @@ export default defineUserConfig({
             },
             {
               text: 'CSS',
-              link: '/web/html-css/css/',
+              // link: '/web/html-css/css/',
               children: [
                 {
                   text: 'hello-css',
@@ -94,30 +95,31 @@ export default defineUserConfig({
           // link: '/computer/concept.md'
         }
       ],
-      '/life/': [
+
+      '/other/': [
         {
-          text: '一些总结',
+          text: 'About life',
           children: [
             {
-              text: '2023的计划',
-              link: '/life/summarize/2023.md'
+              text: 'Plan 2023',
+              link: '/other/life/2023.md'
             }
           ]
         },
         {
-          text: '其他',
+          text: 'Recommend',
           children: [
+            // {
+            //   text: 'Google Extension',
+            //   link: '/other/recommend/chrome.md'
+            // },
             {
-              text: '谷歌插件推荐',
-              link: '/life/other/chrome.md'
+              text: 'VScode Extension',
+              link: '/other/recommend/vscode.md'
             },
             {
-              text: 'vscode插件推荐',
-              link: '/life/other/vscode.md'
-            },
-            {
-              text: '文档',
-              link: '/life/other/document.md'
+              text: 'Information',
+              link: '/other/recommend/information.md'
             }
           ]
         }

@@ -2,21 +2,21 @@
 home: true
 heroImage: /img/portrait.png
 heroText: Hello I am SadPig
-tagline: I think learning is endless
+tagline: I think there is no end to learning
 actions:
   - text: Get Start
     link: /web/
 features:
   - title: web-note
-    details: 一些关于前端知识的笔记
+    details: Some notes on the front end of system learning
   - title: computer
-    details: 零碎的一些知识
-  - title: about life
-    details: 记录一些生活。
+    details: Pieces of computer knowledge
+  - title: other
+    details: Record other things and life.
 # footer: MIT Licensed | Copyright © 2022-2023
 ---
 
-# 最新文章
+# Latest article
 
 - 2023 年 2 月 17 日 - [what is html](/web/html-css/html/html.md)
 - 2023 年 2 月 17 日 - [what is html](/web/html-css/html/html.md)
