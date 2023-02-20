@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-2148a656","path":"/life/other/vscode.html","title":"vscode","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"插件推荐","slug":"插件推荐","link":"#插件推荐","children":[]},{"level":2,"title":"配置","slug":"配置","link":"#配置","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"life/other/vscode.md"}');export{e as data};
