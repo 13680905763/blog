@@ -1,4 +1,4 @@
-# what is html？
+# HELLO HTML
 
 ## 超文本标记语言
 
@@ -55,7 +55,7 @@ HTML 最上方的一段文本我们称之为文档类型声明，用于声明文
 
 _HTML5 的文档声明比 HTML 4.01、XHTML 1.0 简洁非常多(了解即可)_:
 
-```js
+```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

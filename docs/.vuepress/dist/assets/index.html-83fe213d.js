@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-14e6315a","path":"/life/","title":"关于生活","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676627125000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":1},{"name":"张育华","email":"9583941+z-zhang-yuhua@user.noreply.gitee.com","commits":1}]},"filePathRelative":"life/README.md"}');export{e as data};

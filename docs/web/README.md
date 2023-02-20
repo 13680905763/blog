@@ -1,4 +1,4 @@
-# 前言
+# 邂逅
 
 ## 网页的显示过程 - 用户角度
 
@@ -39,6 +39,6 @@ _最开始网页的出现是为了替代报纸_ .
 - **Webkit** ：Safari、360 极速浏览器、搜狗高速浏览器、移动端浏览器（Android、iOS）
 - **Webkit**（分支） -> **Blink** ：Google Chrome
 
-![浏览器内核](/img/computer/concept/renderingEngine.jpg)
+![浏览器内核](/img/computer/encounter/renderingEngine.jpg)
 
 不同的浏览器内核有不同的解析、渲染规则，所以同一网页在不同内核的浏览器中的渲染效果也可能不同。(所以我们要进行浏览器适配，当然现在有各种打包工具帮助我们进行适配了)

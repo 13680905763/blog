@@ -8,19 +8,19 @@ export default defineUserConfig({
     logo: 'http://caibaojian.com/vuepress/hero.png',
     navbar: [
       {
-        text: '首页',
+        text: 'Home',
         link: '/'
       },
       {
-        text: '前端note',
+        text: 'web-note',
         link: '/web/'
       },
       {
-        text: '计算机知识',
+        text: 'computer',
         link: '/computer/'
       },
       {
-        text: '关于生活',
+        text: 'life',
         link: '/life/'
       },
       {
@@ -39,21 +39,35 @@ export default defineUserConfig({
           children: [
             {
               text: 'HTML',
-              link: '/web/html-css/html/',
+              // link: '/web/html-css/html/',
               children: [
                 {
-                  text: 'what is html',
+                  text: 'hello-html',
                   link: '/web/html-css/html/html.md'
                 },
                 {
                   text: 'what is element',
                   link: '/web/html-css/html/element.md'
+                },
+                {
+                  text: 'other',
+                  link: '/web/html-css/html/other.md'
                 }
               ]
             },
             {
               text: 'CSS',
-              link: '/web/html-css/css/'
+              link: '/web/html-css/css/',
+              children: [
+                {
+                  text: 'hello-css',
+                  link: '/web/html-css/css/css.md'
+                },
+                {
+                  text: '常用属性',
+                  link: '/web/html-css/css/常用属性.md'
+                }
+              ]
             }
           ]
         },
@@ -72,8 +86,12 @@ export default defineUserConfig({
       ],
       '/computer/': [
         {
-          text: '概念',
-          link: '/computer/concept.md'
+          text: 'data-structure'
+          // link: '/computer/concept.md'
+        },
+        {
+          text: 'algorithm'
+          // link: '/computer/concept.md'
         }
       ],
       '/life/': [
@@ -96,6 +114,10 @@ export default defineUserConfig({
             {
               text: 'vscode插件推荐',
               link: '/life/other/vscode.md'
+            },
+            {
+              text: '文档',
+              link: '/life/other/document.md'
             }
           ]
         }
