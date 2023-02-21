@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-d9e1a518","path":"/other/recommend/chrome.html","title":"谷歌插件推荐","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"other/recommend/chrome.md"}');export{e as data};
