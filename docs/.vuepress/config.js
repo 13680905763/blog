@@ -67,6 +67,14 @@ export default defineUserConfig({
                 {
                   text: '常用属性',
                   link: '/web/html-css/css/常用属性.md'
+                },
+                {
+                  text: 'CSS selectors',
+                  link: '/web/html-css/css/selectors.md'
+                },
+                {
+                  text: '继承-层叠-元素类型',
+                  link: '/web/html-css/css/继承-层叠-元素类型.md'
                 }
               ]
             }

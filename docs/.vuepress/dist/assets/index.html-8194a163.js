@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e4cb1150","path":"/other/","title":"Say something","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676912623000,"contributors":[{"name":"张育华","email":"9583941+z-zhang-yuhua@user.noreply.gitee.com","commits":1}]},"filePathRelative":"other/index.md"}');export{e as data};

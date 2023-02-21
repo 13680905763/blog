@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/portrait.png
+# heroImage: /img/portrait.png
 heroText: Hello I am SadPig
 tagline: I think there is no end to learning
 actions:

@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-7e05b93f","path":"/other/life/2023.html","title":"2023 的计划","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"other/life/2023.md"}');export{t as data};
