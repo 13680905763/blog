@@ -75,6 +75,10 @@ export default defineUserConfig({
                 {
                   text: '继承-层叠-元素类型',
                   link: '/web/html-css/css/继承-层叠-元素类型.md'
+                },
+                {
+                  text: 'layout',
+                  link: '/web/html-css/css/layout.md'
                 }
               ]
             }
@@ -101,6 +105,10 @@ export default defineUserConfig({
         {
           text: 'algorithm'
           // link: '/computer/concept.md'
+        },
+        {
+          text: 'git',
+          link: '/computer/git.md'
         }
       ],
 
@@ -122,7 +130,7 @@ export default defineUserConfig({
             //   link: '/other/recommend/chrome.md'
             // },
             {
-              text: 'VScode Extension',
+              text: 'VScode',
               link: '/other/recommend/vscode.md'
             },
             {
