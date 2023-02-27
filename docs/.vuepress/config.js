@@ -16,8 +16,8 @@ export default defineUserConfig({
         link: '/web/'
       },
       {
-        text: 'computer',
-        link: '/computer/'
+        text: 'programming',
+        link: '/programming/'
       },
 
       {
@@ -97,7 +97,7 @@ export default defineUserConfig({
           ]
         }
       ],
-      '/computer/': [
+      '/programming/': [
         {
           text: 'data-structure'
           // link: '/computer/concept.md'
@@ -108,7 +108,11 @@ export default defineUserConfig({
         },
         {
           text: 'git',
-          link: '/computer/git.md'
+          link: '/programming/git.md'
+        },
+        {
+          text: 'open-source-protocol',
+          link: '/programming/open-source-protocol.md'
         }
       ],
 

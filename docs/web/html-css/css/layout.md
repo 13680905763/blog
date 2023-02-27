@@ -136,7 +136,7 @@ flex items 可以通过 align-self 覆盖 flex container 设置的 align-items
   - 如果所有 flex items 的 flex-grow 总和 sum 超过 1，每个 flex item 扩展的 size 为
 - flex container 的剩余 size \* flex-grow / sum
 
-![flex-grow](/img/web/css/flex-grow.jpg)
+<!-- ![flex-grow](/img/web/css/flex-grow.jpg) -->
 
 ### flex-shrink
 
