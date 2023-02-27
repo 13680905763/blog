@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6ed09bb7","path":"/other/word.html","title":"单词","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"git","slug":"git","link":"#git","children":[]}],"git":{"updatedTime":1677232777000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":2}]},"filePathRelative":"other/word.md"}');export{t as data};
