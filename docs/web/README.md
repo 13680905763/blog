@@ -46,3 +46,7 @@ _最开始网页的出现是为了替代报纸_ .
 ### 入门渲染流程
 
 ![render](/img/web/render.jpg)
+
+## 画布和视口
+
+![viewport-canvas](/img/web/viewport-canvas.jpg)

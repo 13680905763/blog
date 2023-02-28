@@ -66,18 +66,63 @@
 伪类是选择器的一种，它用于选择处于特定状态的元素;
 常见的伪类有
 
-1. 动态伪类
+#### 动态伪类
 
-   - :link :visited :**hover** :active :focus
+- :link
+- :visited
+- :**hover**
+- :active
+- :focus
 
-2. 元素状态伪类
+#### 目标伪类
 
-   - :enabled :disabled :checked
+- :target
 
-3. 结构伪类
-   :nth-child( )、:nth-last-child( )、:nth-of-type( )、:nth-last-of-type( )
-   :first-child、:last-child、:first-of-type、:last-of-type
-   :root、:only-child、:only-of-type、:empty
+#### 语言伪类
+
+- :lang()
+
+#### 元素状态伪类
+
+- :enabled
+- :disabled
+- :checked
+
+#### 结构伪类
+
+- :nth-child( )
+
+```css
+:nth-child(1) // 父元素中的第 1 个子元素
+:nth-child(2n/even) //是父元素中的第偶数个子元素(n是任意正整数和 0)
+:nth-child(2n + 1/odd) // 是父元素中的第奇数个子元素
+:nth-child(-n + 2) // 代表前 2 个子元素
+
+```
+
+- :nth-last-child( )
+  - 跟:nth-child()类似，从最后一个子元素开始往前计数
+- :nth-of-type( )
+  - 跟:nth-child()类似，只计算同种类型的元素
+- :nth-last-of-type( )
+  - 跟:nth-of-type()类似，从最后一个子元素开始往前计数
+- 其他常见的伪类(了解):
+  - :first-child，等同于:nth-child(1)
+  - :last-child，等同于:nth-last-child(1)
+  - :first-of-type，等同于:nth-of-type(1)
+  - :last-of-type，等同于:nth-last-of-type(1)
+  - :only-child，是父元素中唯一的子元素
+  - :only-of-type，是父元素中唯一的这种类型的子元素
+- 偶尔会使用的伪类:
+  - :root，根元素，就是 HTML 元素
+  - :empty 代表里面完全空白的元素
+
+#### 否定伪类
+
+:not(x) 除 x 以外的元素
+
+- x 是一个简单选择器
+- 元素选择器、通用选择器、属性选择器、类选择器、id 选择器、伪类（除否定伪类）
 
 [所有伪类](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes)
 

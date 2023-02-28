@@ -51,6 +51,10 @@ export default defineUserConfig({
                   link: '/web/html-css/html/element.md'
                 },
                 {
+                  text: 'element2',
+                  link: '/web/html-css/html/element2.md'
+                },
+                {
                   text: 'other',
                   link: '/web/html-css/html/other.md'
                 }
@@ -69,8 +73,16 @@ export default defineUserConfig({
                   link: '/web/html-css/css/常用属性.md'
                 },
                 {
-                  text: 'CSS selectors',
+                  text: 'background',
+                  link: '/web/html-css/css/background.md'
+                },
+                {
+                  text: 'selectors',
                   link: '/web/html-css/css/selectors.md'
+                },
+                {
+                  text: 'box-model',
+                  link: '/web/html-css/css/box-model.md'
                 },
                 {
                   text: '继承-层叠-元素类型',
@@ -79,6 +91,10 @@ export default defineUserConfig({
                 {
                   text: 'layout',
                   link: '/web/html-css/css/layout.md'
+                },
+                {
+                  text: 'position',
+                  link: '/web/html-css/css/position.md'
                 }
               ]
             }

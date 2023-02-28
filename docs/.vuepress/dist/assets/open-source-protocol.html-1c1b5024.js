@@ -1,0 +1,1 @@
+const o=JSON.parse('{"key":"v-1c6d64ba","path":"/programming/open-source-protocol.html","title":"常见的开源协议","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677498636000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":1}]},"filePathRelative":"programming/open-source-protocol.md"}');export{o as data};
