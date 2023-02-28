@@ -98,22 +98,22 @@ export default defineUserConfig({
         }
       ],
       '/programming/': [
-        {
-          text: 'data-structure'
-          // link: '/computer/concept.md'
-        },
-        {
-          text: 'algorithm'
-          // link: '/computer/concept.md'
-        },
+        // {
+        //   text: 'data-structure'
+        //   // link: '/computer/concept.md'
+        // },
+        // {
+        //   text: 'algorithm'
+        //   // link: '/computer/concept.md'
+        // },
         {
           text: 'git',
           link: '/programming/git.md'
-        },
-        {
-          text: 'open-source-protocol',
-          link: '/programming/open-source-protocol.md'
         }
+        // {
+        //   text: 'open-source-protocol',
+        //   link: '/programming/open-source-protocol.md'
+        // }
       ],
 
       '/other/': [

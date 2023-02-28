@@ -401,3 +401,87 @@ git checkout -b <newbranch> // 创建分支并切换分支
 - 所以我们需要将 master 分支和 hotfix 分支进行合并；
 
 ![merge-hotfix](/img/programming/git/merge-hotfix.jpg)
+
+### 查看和删除分支
+
+```git
+git branch // 查看当前所有分支
+git branch -v // 同时查看最后一次提交
+git branch --merge // 查看所有合并到当前分支的分支
+git branch -d hotfix // 删除当前分支
+git branch -D hotfix // 强制删除某一分支
+```
+
+### 远程分支
+
+远程分支是也是一种分支结构：
+
+- 以 \<remote>/\<branch> 的形式命名的；
+  - 如果我们刚刚 clone 下来代码，分支的结构如下：
+  - 如果其他人修改了代码，那么远程分支结构如下：
+- 你需要通过 fetch 来获取最新的远程分支提交信息；
+
+![remote-branch](/img/programming/git/remote-branch.jpg)
+
+- 推送分支到远程
+
+```git
+git push <remote> <branch>
+```
+
+- 跟踪远程分支
+  - 当克隆一个仓库时，它通常会自动地创建一个跟踪 origin/master 的 master 分支；
+  - 如果你愿意的话可以设置其他的跟踪分支
+  - 如果你尝试检出的分支 (a) 不存在且 (b) 刚好只有一个名字与之匹配的远程分支，那么 Git 就会为你创建一个跟踪分支；
+
+```git
+git checkout --track <remote>/<branch> // 跟踪其他分支
+git checkout <branch>
+```
+
+- 删除远程分支
+
+```git
+git push origin --delete <branch>
+```
+
+## git flow（git 工作流）
+
+由于 Git 上分支的使用的便捷性，产生了很多 Git 的工作流：
+
+- 也就是说，在整个项目开发周期的不同阶段，你可以同时拥有多个开放的分支；
+- 你可以定期地把某些主题分支合并入其他分支中；
+
+比较常见的 git flow
+
+![git-flow](/img/programming/git/git-flow.jpg)
+
+## Git rebase
+
+Git 中整合来自不同分支的修改主要有两种方法：merge 以及 rebase。
+
+- merge 用于记录 git 的所有历史，那么分支的历史错综复杂，也全部记录下来；
+- rebase 用于简化历史记录，将两个分支的历史简化，整个历史更加简洁；
+
+rebase 有一条黄金法则：永远不要在主分支上使用 rebase
+
+- 如果在 main 上面使用 rebase，会造成大量的提交历史在 main 分支中不同；
+- 而多人开发时，其他人依然在原来的 main 中，对于提交历史来说会有很大的变化；
+
+![rebase](/img/programming/git/rebase.jpg)
+
+- 在上面的图例中，你可以提取在 C4 中引入的补丁和修改，然后在 C3 的基础上应用一次；
+- 在 Git 中，这种操作就叫做 变基（rebase）；
+- 你可以使用 rebase 命令将提交到某一分支上的所有修改都移至另一分支上，就好像“重新播放”一样；
+- rebase 这个单词如何理解呢？
+  - 我们可以将其理解成改变当前分支的 base；
+  - 比如在分支 experiment 上执行 rebase master，那么可以改变 experiment 的 base 为 master
+
+```git
+git checkout experiment
+git rebase master
+```
+
+## Git 常见命令速查表
+
+![git-commands](/img/programming/git/git-commands.jpg)
