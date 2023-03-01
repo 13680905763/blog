@@ -53,3 +53,39 @@
 决定背景图像的位置是在视口内固定，或者随着包含它的区块滚动。
 
 ## [background](https://developer.mozilla.org/zh-CN/docs/Web/CSS/background#%E6%A0%87%E5%87%86%E8%AF%AD%E6%B3%95)简写属性
+
+## css sprite
+
+- 是一种 CSS 图像合成技术，将各种小图片合并到一张图片上，然后利用 CSS 的背景定位来显示对应的图片部分
+- 有人翻译为：CSS 雪碧、CSS 精灵
+
+优点
+
+- 减少网页的 http 请求数量，加快网页响应速度，减轻服务器压力
+- 减小图片总大小
+- 解决了图片命名的困扰，只需要针对一张集合的图片命名
+
+制作方式
+
+1. Photoshop
+2. [在线工具](https://www.toptal.com/developers/css/sprite-generator)
+
+### 使用
+
+- 精灵图的原理是通过只显示图片的很小一部分来展示的;
+- 通常使用背景:
+
+  1. 设置对应元素的宽度和高度
+  2. 设置精灵图作为背景图片
+  3. 调整背景图片的位置来展示
+
+```css
+// 案例
+.sprite {
+  background: url('./img/sprite.png') no-repeat -100px 50px;
+  width: 20px;
+  height: 13px;
+}
+```
+
+- [获取精灵图的位置](http://www.spritecow.com/)

@@ -68,6 +68,8 @@ HTML 中的每一个元素都可以看做是一个盒子，可以具备这 4 个
 border: <line-width> || <line-style> || <color>; // 顺序任意
 ```
 
+[利用 border 画形状](https://css-tricks.com/the-shapes-of-css/#top-of-site)
+
 ## border-radius
 
 设置盒子的圆角

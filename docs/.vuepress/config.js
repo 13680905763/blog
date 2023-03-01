@@ -73,6 +73,11 @@ export default defineUserConfig({
                   link: '/web/html-css/css/常用属性.md'
                 },
                 {
+                  text: 'font',
+                  link: '/web/html-css/css/font.md'
+                },
+
+                {
                   text: 'background',
                   link: '/web/html-css/css/background.md'
                 },
@@ -89,12 +94,16 @@ export default defineUserConfig({
                   link: '/web/html-css/css/继承-层叠-元素类型.md'
                 },
                 {
-                  text: 'layout',
-                  link: '/web/html-css/css/layout.md'
-                },
-                {
                   text: 'position',
                   link: '/web/html-css/css/position.md'
+                },
+                {
+                  text: 'float 已死',
+                  link: '/web/html-css/css/float.md'
+                },
+                {
+                  text: 'flex 称帝',
+                  link: '/web/html-css/css/flex.md'
                 }
               ]
             }

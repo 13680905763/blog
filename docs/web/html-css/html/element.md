@@ -68,35 +68,39 @@ head 元素 规定文档相关的**配置信息**（也称之为元数据），�
 - 什么是元数据（meta data），是描述数据的数据；
 - 这里我们可以理解成对**整个页面的配置**
 
-一般至少包含如下 2 个设置
+### title 元素
 
-- 网页的标题：title 元素
+```html
+<title>Document</title>
+```
 
-  ```html
-  <title>Document</title>
-  ```
+### meta 元素
 
-- 网页的编码：meta 元素
+1. **charset** 属性，meta 元素是一个字符集声明，告诉文档使用哪种[字符编码](/computer/#字符编码)。
+   - 让浏览器更精准地显示每一个文字，不设置或设置错误会导致乱码
+2. **http-equiv** 属性，meta 元素则是编译指令。
+   - 告知 IE 浏览器去模仿哪一个浏览器的行为；
+   - IE=edge，告知 IE8 区使用最高有效模式来模仿；
+3. **name** 属性，meta 元素提供的是文档级别（document-level）的元数据，应用于整个页面
+   - robots：爬虫、协作搜寻器，或者 “机器人”，对此页面的处理行为，或者说，应当遵守的规则。
+   - author：文档作者的名字。
+   - Copyright：版权声明；
+   - description：一段简短而精确的、对页面内容的描述。比如 Firefox 和 Opera，将其用作书签的默认描述。
+   - keywords：与页面内容相关的关键词，使用逗号分隔。某些搜索引擎会进行收录；
+   - [更多](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta/name)
 
-  - 可以用于设置网页的[字符编码](/computer/#字符编码)，让浏览器更精准地显示每一个文字，不设置或设置错误会导致乱码
-  - 一般都使用 utf-8 编码，涵盖了世界上几乎所有的文字；
+![head](/img/web/html/head.jpg)
 
-  ```html
-  <meta charset="UTF-8" />
-  ```
+### link 元素
 
-  ![head](/img/web/html/head.jpg)
+- 是外部资源链接，规范了文档与外部资源的关系
+- 最常用的链接是 css，也可以被用来创建 favicon 图标
+- rel 指定链接类型
+- href 指定被链接资源的 url
 
-- link 元素
-
-  - 是外部资源链接，规范了文档与外部资源的关系
-  - 最常用的链接是 css，也可以被用来创建 favicon 图标
-  - rel 指定链接类型
-  - href 指定被链接资源的 url
-
-  ```html
-  <link rel="stylesheet" href="./index.css" />
-  ```
+```html
+<link rel="stylesheet" href="./index.css" />
+```
 
 ## body 元素
 
