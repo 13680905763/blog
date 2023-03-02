@@ -109,6 +109,10 @@ export default defineUserConfig({
                   link: '/web/html-css/css/float.md'
                 },
                 {
+                  text: 'bfc',
+                  link: '/web/html-css/css/bfc.md'
+                },
+                {
                   text: 'flex 称帝',
                   link: '/web/html-css/css/flex.md'
                 },
