@@ -55,6 +55,10 @@ export default defineUserConfig({
                   link: '/web/html-css/html/element2.md'
                 },
                 {
+                  text: 'html5-element',
+                  link: '/web/html-css/html/html5-element.md'
+                },
+                {
                   text: 'other',
                   link: '/web/html-css/html/other.md'
                 }
@@ -76,7 +80,10 @@ export default defineUserConfig({
                   text: 'font',
                   link: '/web/html-css/css/font.md'
                 },
-
+                {
+                  text: 'other-property',
+                  link: '/web/html-css/css/other-property.md'
+                },
                 {
                   text: 'background',
                   link: '/web/html-css/css/background.md'
@@ -104,6 +111,26 @@ export default defineUserConfig({
                 {
                   text: 'flex 称帝',
                   link: '/web/html-css/css/flex.md'
+                },
+                {
+                  text: '过渡动画',
+                  link: '/web/html-css/css/过渡动画.md'
+                },
+                {
+                  text: 'css-function',
+                  link: '/web/html-css/css/css-function.md'
+                },
+                {
+                  text: '媒体查询',
+                  link: '/web/html-css/css/媒体查询.md'
+                },
+                {
+                  text: 'css单位',
+                  link: '/web/html-css/css/css单位.md'
+                },
+                {
+                  text: '移动端适配',
+                  link: '/web/html-css/css/移动端适配.md'
                 }
               ]
             }
@@ -120,6 +147,10 @@ export default defineUserConfig({
               text: 'js高级'
             }
           ]
+        },
+        {
+          text: 'LESS',
+          link: '/web/less/less.md'
         }
       ],
       '/programming/': [
