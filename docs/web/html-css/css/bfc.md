@@ -1,5 +1,12 @@
 # Block Formatting Context
 
+FC 的全称是 Formatting Context（格式化上下文），元素在标准流里面都是属于 FC 的
+
+- 浏览器帮我们创建的一个上下文环境
+
+1. 块级元素的布局属于 Block Formatting Context
+2. 行内级元素的布局属于 Inline Formatting Context
+
 - 在 BFC 中，box 会在垂直方向上一个挨着一个的排布；
 - 垂直方向的间距由 margin 属性决定；
 - 在同一个 BFC 中，相邻两个 box 之间的 margin 会折叠（collapse）；
@@ -35,7 +42,6 @@ BFC 解决高度塌陷需要满足两个条件：
 BFC 的高度是 auto 的情况下，是如下方法计算高度的
 
 1. 如果只有 inline-level，是行高的顶部和底部的距离；
-2. 如果有 block-level，是由最底层的块上边缘和最底层块盒子的下边缘之间的距离
+2. 如果有 block-level，是由最顶层的块上边缘和最底层块盒子的下边缘之间的距离
 3. 如果有绝对定位元素，将被忽略；
-4. 如果有浮动元素，那么会增加高度以包括这些浮动元
-   素的下边缘
+4. 如果有浮动元素，那么会**增加高度以包括这些浮动元素的下边缘**
