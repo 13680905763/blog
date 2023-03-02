@@ -41,13 +41,6 @@ strong、b、h1~h6 等标签的 font-weight 默认就是 bold
 - italic(斜体)：用字体的斜体显示(通常会有专门的字体)
 - oblique(倾斜)：文本倾斜
 
-## font-variant(了解)
-
-设置小写字母的显示形式
-
-- normal：常规显示
-- small-caps：将小写字母替换为缩小过的大写字母
-
 ## line-height（重点）
 
 设置文本的行高，行高有利于阅读

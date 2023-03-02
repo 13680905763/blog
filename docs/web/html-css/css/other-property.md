@@ -77,6 +77,16 @@ white-space 用于设置空白处理和换行规则
 - pre-wrap：阻止合并所有连续的空白，允许单词超屏时自动换行
 - pre-line：合并所有连续的空白（但保留换行），允许单词超屏时自动换行
 
+## overflow
+
+控制内容溢出时的行为
+
+- visible：溢出的内容照样可见
+- hidden：溢出的内容直接裁剪
+- scroll：溢出的内容被裁剪，但可以通过滚动机制查看
+  - 会一直显示滚动条区域，滚动条区域占用的空间属于 width、height
+- auto：自动根据内容是否溢出来决定是否提供滚动机制
+
 ## text-overflow
 
 text-overflow 通常用来设置文字溢出时的行为
@@ -86,7 +96,7 @@ text-overflow 通常用来设置文字溢出时的行为
 
 **text-overflow 生效的前提是 overflow 不为 visible**.
 
-常见的是将 white-space、text-overflow、overflow 一起使用：
+常见的是将 white-space、overflow、text-overflow 一起使用：
 
 ```css
 white-space: nowrap;

@@ -1,0 +1,1 @@
+import{_ as t,p as o,q as a,R as e,t as n}from"./framework-204010b2.js";const c={},r=e("h1",{id:"font-text-字体与文本",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#font-text-字体与文本","aria-hidden":"true"},"#"),n(" FONT-TEXT 字体与文本")],-1),s=[r];function _(d,f){return o(),a("div",null,s)}const h=t(c,[["render",_],["__file","font-text.html.vue"]]);export{h as default};

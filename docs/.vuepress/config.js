@@ -77,6 +77,10 @@ export default defineUserConfig({
                   link: '/web/html-css/css/常用属性.md'
                 },
                 {
+                  text: 'text',
+                  link: '/web/html-css/css/text.md'
+                },
+                {
                   text: 'font',
                   link: '/web/html-css/css/font.md'
                 },
@@ -105,32 +109,32 @@ export default defineUserConfig({
                   link: '/web/html-css/css/position.md'
                 },
                 {
-                  text: 'float 已死',
+                  text: 'float',
                   link: '/web/html-css/css/float.md'
                 },
                 {
-                  text: 'bfc',
-                  link: '/web/html-css/css/bfc.md'
+                  text: 'block-formatting-context',
+                  link: '/web/html-css/css/block-formatting-context.md'
                 },
                 {
-                  text: 'flex 称帝',
+                  text: 'flex',
                   link: '/web/html-css/css/flex.md'
                 },
                 {
-                  text: '过渡动画',
-                  link: '/web/html-css/css/过渡动画.md'
+                  text: 'transition-animation',
+                  link: '/web/html-css/css/transition-animation.md'
                 },
                 {
                   text: 'css-function',
                   link: '/web/html-css/css/css-function.md'
                 },
                 {
-                  text: '媒体查询',
-                  link: '/web/html-css/css/媒体查询.md'
+                  text: 'media',
+                  link: '/web/html-css/css/media.md'
                 },
                 {
-                  text: 'css单位',
-                  link: '/web/html-css/css/css单位.md'
+                  text: 'css-units',
+                  link: '/web/html-css/css/css-units.md'
                 },
                 {
                   text: '移动端适配',
