@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e4236ba6","path":"/web/javascript/js-base/hello-js.html","title":"hello js","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677834808000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":1}]},"filePathRelative":"web/javascript/js-base/hello-js.md"}');export{e as data};
