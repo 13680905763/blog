@@ -66,31 +66,26 @@ export default defineUserConfig({
             },
             {
               text: 'CSS',
-              // link: '/web/html-css/css/',
               children: [
                 {
                   text: 'hello-css',
                   link: '/web/html-css/css/css.md'
                 },
                 {
-                  text: '常用属性',
-                  link: '/web/html-css/css/常用属性.md'
+                  text: 'css-property',
+                  link: '/web/html-css/css/css-property.md'
                 },
                 {
-                  text: 'text',
-                  link: '/web/html-css/css/text.md'
-                },
-                {
-                  text: 'font',
-                  link: '/web/html-css/css/font.md'
-                },
-                {
-                  text: 'other-property',
-                  link: '/web/html-css/css/other-property.md'
+                  text: 'font-text',
+                  link: '/web/html-css/css/font-text.md'
                 },
                 {
                   text: 'background',
                   link: '/web/html-css/css/background.md'
+                },
+                {
+                  text: 'other-property',
+                  link: '/web/html-css/css/other-property.md'
                 },
                 {
                   text: 'selectors',
@@ -99,10 +94,6 @@ export default defineUserConfig({
                 {
                   text: 'box-model',
                   link: '/web/html-css/css/box-model.md'
-                },
-                {
-                  text: '继承-层叠-元素类型',
-                  link: '/web/html-css/css/继承-层叠-元素类型.md'
                 },
                 {
                   text: 'position',
@@ -137,8 +128,8 @@ export default defineUserConfig({
                   link: '/web/html-css/css/css-units.md'
                 },
                 {
-                  text: '移动端适配',
-                  link: '/web/html-css/css/移动端适配.md'
+                  text: 'mobile-terminal-adaptation',
+                  link: '/web/html-css/css/mobile-terminal-adaptation.md'
                 }
               ]
             }
@@ -148,11 +139,29 @@ export default defineUserConfig({
           text: 'JavaScript',
           children: [
             {
-              text: 'js基础',
-              link: '/web/javascript/js基础/'
+              text: 'js-base',
+              // link: '/web/javascript/js-base/',
+              children: [
+                {
+                  text: 'hello-js',
+                  link: '/web/javascript/js-base/hello-js.md'
+                },
+                {
+                  text: '变量-数据类型',
+                  link: '/web/javascript/js-base/变量-数据类型.md'
+                },
+                {
+                  text: '运算符',
+                  link: '/web/javascript/js-base/运算符.md'
+                },
+                {
+                  text: '分支-循环',
+                  link: '/web/javascript/js-base/分支-循环.md'
+                }
+              ]
             },
             {
-              text: 'js高级'
+              text: 'js-advanced'
             }
           ]
         },
