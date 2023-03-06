@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5934720c","path":"/web/browser/browser.html","title":"浏览器相关知识","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"web/browser/browser.md"}');export{e as data};

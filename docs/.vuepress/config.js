@@ -157,6 +157,18 @@ export default defineUserConfig({
                 {
                   text: '分支-循环',
                   link: '/web/javascript/js-base/分支-循环.md'
+                },
+                {
+                  text: 'function',
+                  link: '/web/javascript/js-base/function.md'
+                },
+                {
+                  text: 'object',
+                  link: '/web/javascript/js-base/object.md'
+                },
+                {
+                  text: 'event',
+                  link: '/web/javascript/js-base/event.md'
                 }
               ]
             },
@@ -169,15 +181,19 @@ export default defineUserConfig({
           text: 'LESS',
           link: '/web/less/less.md'
         }
+        // {
+        //   text: 'browser',
+        //   link: '/web/browser/browser.md'
+        // }
       ],
       '/programming/': [
         // {
         //   text: 'data-structure'
-        //   // link: '/computer/concept.md'
+        //   link: '/computer/concept.md'
         // },
         // {
         //   text: 'algorithm'
-        //   // link: '/computer/concept.md'
+        //   link: '/computer/concept.md'
         // },
         {
           text: 'git',
