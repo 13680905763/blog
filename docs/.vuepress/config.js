@@ -167,9 +167,17 @@ export default defineUserConfig({
                   link: '/web/javascript/js-base/object.md'
                 },
                 {
+                  text: '内置类',
+                  link: '/web/javascript/js-base/内置类.md'
+                },
+                {
                   text: 'event',
                   link: '/web/javascript/js-base/event.md'
-                }
+                },
+                {
+                  text: 'dom',
+                  link: '/web/javascript/js-base/dom.md'
+                },
               ]
             },
             {
