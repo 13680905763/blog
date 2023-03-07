@@ -151,8 +151,8 @@ export default defineUserConfig({
                   link: '/web/javascript/js-base/变量-数据类型.md'
                 },
                 {
-                  text: '运算符',
-                  link: '/web/javascript/js-base/运算符.md'
+                  text: 'operator',
+                  link: '/web/javascript/js-base/operator.md'
                 },
                 {
                   text: '分支-循环',
@@ -178,21 +178,39 @@ export default defineUserConfig({
                   text: 'dom',
                   link: '/web/javascript/js-base/dom.md'
                 },
+                {
+                  text: 'bom',
+                  link: '/web/javascript/js-base/bom.md'
+                },
+                {
+                  text: 'json',
+                  link: '/web/javascript/js-base/json.md'
+                },
+                {
+                  text: 'storage',
+                  link: '/web/javascript/js-base/storage.md'
+                }
               ]
             },
             {
-              text: 'js-advanced'
+              text: 'js-advanced',
+              children: [
+                {
+                  text: 'this',
+                  link: '/web/javascript/js-advanced/this.md'
+                }
+              ]
             }
           ]
         },
         {
           text: 'LESS',
           link: '/web/less/less.md'
+        },
+        {
+          text: 'Browser',
+          link: '/web/browser/browser.md'
         }
-        // {
-        //   text: 'browser',
-        //   link: '/web/browser/browser.md'
-        // }
       ],
       '/programming/': [
         // {

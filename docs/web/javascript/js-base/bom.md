@@ -37,14 +37,42 @@
   4. 包含从 EventTarget 继承过来的方法，addEventListener、removeEventListener、dispatchEvent 方法；
 - [更多属性、方法、事件](https://developer.mozilla.org/zh-CN/docs/Web/API/Window)
 
-### window 常见的属性
+### location 对象常见的属性
 
-```javascript
-console.log(window.outerHeight)
-console.log(window.innerHeight)
-console.log(window.screenX)
-console.log(window.screenY)
-window.addEventListener('scroll', (e) => {
-  console.log('滚动了')
-})
-```
+- location 对象用于表示 window 上当前链接到的 URL 信息。
+  - href: 当前 window 对应的超链接 URL, 整个 URL；
+  - protocol: 当前的协议；
+  - host: 主机地址；
+  - hostname: 主机地址(不带端口)；
+  - port: 端口；
+  - pathname: 路径；
+  - search: 查询字符串；
+  - hash: 哈希值；
+
+### Location 对象常见的方法
+
+location 其实是 URL 的一个抽象实现：
+
+![location](/img/web/javascript/js-base/bom/location.jpg)
+
+- location 有如下常用的方法：
+  - assign：赋值一个新的 URL，并且跳转到该 URL 中；
+  - replace：打开一个新的 URL，并且跳转到该 URL 中（不同的是不会在浏览记录中留下之前的记录）；
+  - reload：重新加载页面，可以传入一个 Boolean 类型；
+
+### history 对象常见属性和方法
+
+- history 对象允许我们访问浏览器曾经的会话历史记录。
+- 有两个属性：
+  - length：会话中的记录条数；
+  - state：当前保留的状态值；
+- 有五个方法：
+  - back()：返回上一页，等价于 history.go(-1)；
+  - forward()：前进下一页，等价于 history.go(1)；
+  - go()：加载历史中的某一页；
+  - pushState()：打开一个指定的地址；
+  - replaceState()：打开一个新的地址，并且使用 replace；
+
+### navigator 对象
+
+### screen 对象
