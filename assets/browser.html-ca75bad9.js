@@ -1,1 +1,0 @@
-import{_ as t,p as r,q as a,R as e,t as s}from"./framework-204010b2.js";const o={},c=e("h1",{id:"浏览器相关知识",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#浏览器相关知识","aria-hidden":"true"},"#"),s(" 浏览器相关知识")],-1),n=[c];function _(d,i){return r(),a("div",null,n)}const l=t(o,[["render",_],["__file","browser.html.vue"]]);export{l as default};
