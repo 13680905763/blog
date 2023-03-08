@@ -23,6 +23,13 @@
 
 不同的浏览器内核有不同的解析、渲染规则，所以同一网页在不同内核的浏览器中的渲染效果也可能不同。(所以我们要进行浏览器适配，当然现在有各种打包工具帮助我们进行适配了)
 
+浏览器内核是由两部分组成的，以 webkit 为例：
+
+- WebCore：负责 HTML 解析、布局、渲染等等相关的工作；
+- JavaScriptCore：解析、执行 JavaScript 代码；
+
+另外一个强大的 JavaScript 引擎就是 V8 引擎。
+
 ### 渲染引擎解析页面
 
 ![render流程](/img/web/browser/render流程.jpg)
@@ -101,3 +108,78 @@
 4. 对某些元素使用 position 的 absolute 或者 fixed
    - 并不是不会引起回流，而是开销相对较小，不会对
      其他元素造成影响。
+
+### 特殊解析 – composite 合成
+
+- 绘制的过程，可以将布局后的元素绘制到多个合成图层中。
+  - 这是浏览器的一种优化手段；
+- 默认情况下，标准流中的内容都是被绘制在同一个图层（Layer）中的；
+- 而一些特殊的属性，会创建一个新的合成层（ CompositingLayer ），并且新的图层可以利用 GPU 来加速绘制；
+  - 因为每个合成层都是单独渲染的；
+- 那么哪些属性可以形成新的合成层呢？常见的一些属性：
+  - 3D transforms
+  - video、canvas、iframe
+  - opacity 动画转换时；
+  - position: fixed
+  - will-change：一个实验性的属性，提前告诉浏览器元素可能发生哪些变化；
+  - animation 或 transition 设置了 opacity、transform；
+- 分层确实可以提高性能，但是它以内存管理为代价，因此不应作为 web 性能优化策略的一部分过度使用。
+
+![layers](/img/web/browser/layers.jpg)
+
+### script 元素和页面解析的关系
+
+- 浏览器在解析 HTML 的过程中，遇到了 script 元素是不能继续构建 DOM 树的；
+- 它会停止继续构建，首先下载 JavaScript 代码，并且执行 JavaScript 的脚本；
+- 只有等到 JavaScript 脚本执行结束后，才会继续解析 HTML，构建 DOM 树；
+
+JavaScript 的作用之一就是操作 DOM，并且可以修改 DOM；
+
+- 等到 DOM 树构建完成并且渲染再执行 JavaScript，会造成严重的回流和重绘，影响页面的性能；
+- 所以会在遇到 script 元素时，优先下载和执行 JavaScript 代码，再继续构建 DOM 树；
+
+script 元素给我们提供了两个属性（attribute）：defer 和 async
+
+#### defer
+
+- defer 属性告诉浏览器不要等待脚本下载，而继续解析 HTML，构建 DOM Tree。
+  - 脚本会由浏览器来进行下载，但是不会阻塞 DOM Tree 的构建过程；
+  - 如果脚本提前下载好了，它会等待 DOM Tree 构建完成，在 DOMContentLoaded 事件之前先执行 defer 中的代码；
+- 所以 DOMContentLoaded 总是会等待 defer 中的代码先执行完成。
+- 另外多个带 defer 的脚本是可以保持正确的顺序执行的。
+- 从某种角度来说，defer 可以提高页面的性能，并且推荐放到 head 元素中；
+
+#### async
+
+- async 特性与 defer 有些类似，它也能够让脚本不阻塞页面。
+- async 是让一个脚本完全独立的：
+  - 浏览器不会因 async 脚本而阻塞（与 defer 类似）；
+  - async 脚本不能保证顺序，它是独立下载、独立运行，不会等待其他脚本；
+  - async 不会能保证在 DOMContentLoaded 之前或者之后执行；
+- defer 通常用于需要在文档解析后操作 DOM 的 JavaScript 代码，并且对多个 script 文件有顺序要求的；
+- async 通常用于独立的脚本，对其他脚本，甚至 DOM 没有依赖的；
+
+### V8 引擎的执行原理
+
+![浏览器内核](/img/web/browser/v8.jpg)
+
+1. [Parse](https://v8.dev/blog/scanner) 模块会将 JavaScript 代码转换成 AST（抽象语法树），这是因为解释器并不直接认识 JavaScript 代码；
+   - 如果函数没有被调用，那么是不会被转换成 AST 的；
+2. [Ignition](https://v8.dev/blog/ignition-interpreter)是一个解释器，会将 AST 转换成 ByteCode（字节码）
+   - 同时会收集 TurboFan 优化所需要的信息（比如函数参数的类型信息，有了类型才能进行真实的运算）；
+   - 如果函数只调用一次，Ignition 会解释执行 ByteCode；
+3. [TurboFan](https://v8.dev/blog/turbofan-jit) 是一个编译器，可以将字节码编译为 CPU 可以直接执行的机器码；
+   - 如果一个函数被多次调用，那么就会被标记为热点函数，那么就会经过 TurboFan 转换成优化的机器码，提高代码的执行性能；
+   - 但是，机器码实际上也会被还原为 ByteCode，这是因为如果后续执行函数的过程中，类型发生了变化（比如 sum 函数原来执
+     行的是 number 类型，后来执行变成了 string 类型），之前优化的机器码并不能正确的处理运算，就会逆向的转换成字节码；
+
+![v8官图](/img/web/browser/v8官图.jpg)
+
+- 词法分析（英文 lexical analysis）
+
+  - 将字符序列转换成 token 序列的过程。
+  - token 是记号化 （tokenization）的缩写
+  - 词法分析器（lexical analyzer，简称 lexer），也叫扫描器（scanner）
+
+- 语法分析（英语：syntactic analysis，也叫 parsing）
+  - 语法分析器也可以称之为 parser。
