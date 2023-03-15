@@ -36,10 +36,10 @@ export default defineUserConfig({
     sidebar: {
       '/web/': [
         {
-          text: 'HTML&CSS',
+          text: 'html&css',
           children: [
             {
-              text: 'HTML',
+              text: 'html',
               // link: '/web/html-css/html/',
               children: [
                 {
@@ -65,7 +65,7 @@ export default defineUserConfig({
               ]
             },
             {
-              text: 'CSS',
+              text: 'css',
               children: [
                 {
                   text: 'hello-css',
@@ -136,7 +136,7 @@ export default defineUserConfig({
           ]
         },
         {
-          text: 'JavaScript',
+          text: 'javascript',
           children: [
             {
               text: 'js-base',
@@ -204,11 +204,24 @@ export default defineUserConfig({
           ]
         },
         {
-          text: 'LESS',
+          text: 'typescript',
+          children: [
+            {
+              text: '基础类型',
+              link: '/web/typescript/base.md'
+            },
+            {
+              text: '语法细节',
+              link: '/web/typescript/语法细节.md'
+            }
+          ]
+        },
+        {
+          text: 'less',
           link: '/web/less/less.md'
         },
         {
-          text: 'Browser',
+          text: 'browser',
           link: '/web/browser/browser.md'
         }
       ],
