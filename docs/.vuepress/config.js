@@ -208,11 +208,19 @@ export default defineUserConfig({
           children: [
             {
               text: '基础类型',
-              link: '/web/typescript/base.md'
+              link: '/web/typescript/基础类型.md'
             },
             {
               text: '语法细节',
               link: '/web/typescript/语法细节.md'
+            },
+            {
+              text: '面向对象',
+              link: '/web/typescript/面向对象.md'
+            },
+            {
+              text: '泛型',
+              link: '/web/typescript/泛型.md'
             }
           ]
         },

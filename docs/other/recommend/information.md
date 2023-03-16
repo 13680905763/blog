@@ -13,3 +13,5 @@
 - [查询 css 属性可用性](https://caniuse.com/)
 - [代码规范](https://guide.aotu.io/)
 - [css 样式调试](https://htmlcheatsheet.com/css/)
+- [ts 类型体操](https://github.com/type-challenges/type-challenges/blob/main/README.zh-CN.md)
+- [learnGit](https://learngitbranching.js.org/?locale=zh_CN)
