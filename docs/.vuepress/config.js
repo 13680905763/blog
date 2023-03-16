@@ -221,6 +221,10 @@ export default defineUserConfig({
             {
               text: '泛型',
               link: '/web/typescript/泛型.md'
+            },
+            {
+              text: '知识扩展',
+              link: '/web/typescript/知识扩展.md'
             }
           ]
         },
