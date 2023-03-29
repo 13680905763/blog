@@ -198,6 +198,14 @@ export default defineUserConfig({
                 {
                   text: 'this',
                   link: '/web/javascript/js-advanced/this.md'
+                },
+                {
+                  text: '内存管理和闭包',
+                  link: '/web/javascript/js-advanced/内存管理和闭包.md'
+                },
+                {
+                  text: 'function',
+                  link: '/web/javascript/js-advanced/function.md'
                 }
               ]
             }
