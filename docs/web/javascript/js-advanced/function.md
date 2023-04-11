@@ -69,4 +69,47 @@ Difference between Rest parameters and arguments
 
 - The Rest parameters contain only those arguments that do not have corresponding formal parameters, while the arguments object contains all the arguments passed to the function；
 - The arguments object is not a real array, while the rest parameter is a real array that can perform all operations on the array；
-- arguments 是早期的 ECMAScript 中为了方便去获取所有的参数提供的一个数据结构，而 rest 参数是 ES6 中提供并且希望以此来替代 arguments 的；
+- Arguments is a data structure provided in early ECMAScript to facilitate obtaining all parameters, while the rest parameter is provided in ES6 and is expected to replace arguments；
+
+## Pure Functions
+
+- A certain input must produce a certain output；
+- Functions cannot have side effects during execution；
+
+side effects： when executing a function, it not only returns a function value but also has additional effects on the call, such as modifying global variables, modifying parameters or changing external storage.
+
+## Currying
+
+- Pass only a portion of the parameters to the function to call it, and ask it to return a function to handle the remaining parameters；
+
+superiority
+
+- The function has a single responsibility
+- Parameter reuse of functions
+
+## Compose function
+
+- To make a function call to a certain data, execute two functions fn1 and fn2, which are executed sequentially
+- If we need to make two function calls each time, the operation will appear repetitive
+- Combine these two functions and automatically call them in turn
+
+## Strict mode
+
+Strict mode eliminates some original silent errors by throwing errors;
+
+```javascript
+'use strict'
+function foo() {
+  'use strict'
+  console.log(123)
+}
+```
+
+1. Cannot accidentally create a global variable
+2. Strict mode can cause assignment operations that cause silent failures to throw exceptions
+3. Attempting to delete non deletable attributes in strict mode
+4. Strict mode does not allow function parameters to have the same name
+5. Octal syntax of 0 is not allowed
+6. In strict mode, with is not allowed
+7. In strict mode, eval is no longer an upper level reference variable
+8. In strict mode, this binding will not be converted to an object by default

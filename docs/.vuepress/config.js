@@ -206,6 +206,10 @@ export default defineUserConfig({
                 {
                   text: 'function',
                   link: '/web/javascript/js-advanced/function.md'
+                },
+                {
+                  text: 'object',
+                  link: '/web/javascript/js-advanced/object.md'
                 }
               ]
             }
