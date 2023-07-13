@@ -210,6 +210,30 @@ export default defineUserConfig({
                 {
                   text: 'object',
                   link: '/web/javascript/js-advanced/object.md'
+                },
+                {
+                  text: 'extends',
+                  link: '/web/javascript/js-advanced/extends.md'
+                },
+                {
+                  text: 'es6',
+                  link: '/web/javascript/js-advanced/es6.md'
+                },
+                {
+                  text: 'es7-es13',
+                  link: '/web/javascript/js-advanced/es7-es13.md'
+                },
+                {
+                  text: 'proxy-reflect',
+                  link: '/web/javascript/js-advanced/proxy-reflect.md'
+                },
+                {
+                  text: 'promise',
+                  link: '/web/javascript/js-advanced/promise.md'
+                },
+                {
+                  text: 'Iterator-Generator',
+                  link: '/web/javascript/js-advanced/Iterator-Generator.md'
                 }
               ]
             }
