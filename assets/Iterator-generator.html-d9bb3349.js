@@ -1,1 +1,0 @@
-const a=JSON.parse('{"key":"v-aeaa6d64","path":"/web/javascript/js-advanced/Iterator-generator.html","title":"Iterator-Generator","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1689239729000,"contributors":[{"name":"13680905763","email":"177748749@qq.com","commits":1}]},"filePathRelative":"web/javascript/js-advanced/Iterator-generator.md"}');export{a as data};
