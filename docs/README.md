@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/portrait.png
-heroText: Hello I am SadPig
+heroText: Hello I am yuHua
 tagline: I think there is no end to learning
 actions:
   - text: Get Start

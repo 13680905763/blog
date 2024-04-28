@@ -1,11 +1,11 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: '悲伤猪的博客',
+  title: 'yuhua的博客',
   base: '/blog/',
-  description: 'i am sadPig',
+  description: 'i am yuhua',
   theme: defaultTheme({
-    logo: 'http://caibaojian.com/vuepress/hero.png',
+    logo: '/img/logo.png',
     navbar: [
       {
         text: 'Home',
