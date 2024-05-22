@@ -275,12 +275,26 @@ export default defineUserConfig({
               text: '从输入url到浏览器显示',
               link: '/web/browser/从输入url到浏览器显示.md'
             },
-            {
-              text: '',
-              link: '/web/typescript/语法细节.md'
-            }
+            // {
+            //   text: '',
+            //   link: '/web/typescript/语法细节.md'
+            // }
           ]
           // link: '/web/browser/browser.md'
+        },
+        {
+          text: 'node',
+          children: [
+            {
+              text: 'node base',
+              link: '/web/node/node-base.md'
+            },
+            {
+              text: 'module',
+              link: '/web/node/module.md'
+            },
+            
+          ]
         }
       ],
       '/programming/': [
