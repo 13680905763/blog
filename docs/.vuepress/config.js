@@ -293,6 +293,10 @@ export default defineUserConfig({
               text: 'module',
               link: '/web/node/module.md'
             },
+            {
+              text: 'package-manager',
+              link: '/web/node/package-manager.md'
+            },
             
           ]
         }
